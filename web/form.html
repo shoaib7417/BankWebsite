@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="image/websiteicon.jpg"><!-- comment -->
+    <title>Bank Account Opening Form</title>
+</head>
+<body>
+    <div style="height: 80px; width: 100%; display: flex;">
+        <div style="height: 130px; width: 300px;">
+            <img src="image/banklogo1-removebg-preview (1).png" height="200px" width="300px" style="margin-top: -45px;">
+        </div>
+        <div style="height: 50px; width: calc(100% - 800px); display: flex; justify-content: space-around; align-items: center; margin-left: 500px; margin-top: 30px">
+            <a href="bank.html" style="text-decoration: none; color: darkblue;">Home</a>
+            <a href="aboutus.html" style="text-decoration: none; color: darkblue;">About Us</a>
+            <a href="eservice.html" style="text-decoration: none; color: darkblue;">E-Services</a>
+            <a href="customercare.html" style="text-decoration: none; color: darkblue;">Customer Care</a>
+        </div>
+    </div>
+
+    <center>
+        <h2 style="margin-top: 50px; color: darkblue">Bank Account Opening Form</h2>
+    </center>
+
+    <div style="height: 700px; width: 1000px; background-color: lightsteelblue; margin-left: 100px; margin-top: 50px; border-radius: 20px">
+        <form action="" method="post">
+            <h2 style="margin-left: 20px; padding-top: 30px">Personal Information :</h2>
+            <div style="height: 25px; width: 100%; display: flex">
+                <label style="margin-left: 120px" for="full_name">Full Name:</label>
+                <input style="margin-left: 10px;" type="text" id="full_name" name="full_name" required>
+                <label style="margin-left: 200px" for="dob">Date of Birth:</label>
+                <input style="margin-left: 10px;" type="date" id="dob" name="dob" required>
+            </div>
+            <div style="height: 130px; width: 100%; margin-top: 50px" >
+                <label style="margin-left: 10px" for="address">Residential Address:</label>
+                <textarea style="height: 80px; width: 95%; resize: none; margin-left: 20px; margin-top: 15px; background-color: whitesmoke; border-radius: 0px" placeholder="Please Enter Residential Area Address..." name="feedback" rows="6" cols="60"></textarea><br><br>
+            </div>
+            <div style="height: 25px; width: 100%; display: flex; margin-top: 30px">
+                <label style="margin-left: 100px" for="contact">Contact Number:</label>
+                <input style="margin-left: 10px;" type="tel" id="contact" name="contact" required>
+                <label style="margin-left: 150px" for="ssn">Social Security Number:</label>
+                <input style="margin-left: 10px;" type="text" id="ssn" name="ssn" required>
+            </div>
+            <h2 style="margin-left: 20px; padding-top: 20px">Account Information :</h2>
+            <div style="height: 25px; width: 100%; display: flex; margin-top: 30px">
+                <label style="margin-left: 100px" for="account_type">Account Type:</label>
+                <select style="margin-left: 10px;" id="account_type" name="account_type" required>
+                    <option value="checking">Checking</option>
+                    <option value="savings">Savings</option>
+                </select>
+                <label style="margin-left: 250px" for="initial_deposit">Initial Deposit Amount:</label>
+                <input style="margin-left: 10px;" type="number" id="initial_deposit" name="initial_deposit" required>
+            </div>
+            <h2 style="margin-left: 20px; padding-top: 20px">Identification Documents</h2>
+            <div style="height: 30px; width: 100%; display: flex; margin-top: 30px">
+                <label style="margin-left: 50px" for="id_document">Upload ID Document:</label>
+                <input type="file" id="id_document" name="id_document" required>
+                <label style="margin-left: 100px" for="proof_address">Upload Proof of Address:</label><br>
+                <input type="file" id="proof_address" name="proof_address" required><br><br>
+            </div>
+            <div style="height: 50px; width: 100%; margin-top: 50px">
+                <center>
+                    <input style="height: 30px; width: 100px; font-weight: bold; background-color: darkblue; color: lightsteelblue" type="submit" value="Submit">
+                </center>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
